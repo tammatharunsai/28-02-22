@@ -1,9 +1,7 @@
-l=[1,2,5,4,6,2,8,9,3,4]
+l=[1,2,1,5,5,4,6,2,8,9,3,4]
 l1=[]
-l2=[]
 for i in l:
     if i not in l1:
-        l1.append(i)
-    else:
-        l2.append(i)
-print(l2)
+        if l.count(i)==1:
+            l1.append(i)
+print(l1)
