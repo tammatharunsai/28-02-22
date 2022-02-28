@@ -1,0 +1,7 @@
+x=[5,7,4,6,5,2,4,5,5,5,9,9,9,6,7]
+l=[]
+for i in x:
+    if i not in l:
+        if x.count(i)%2!=0:
+            l.append(i)
+print(l)
